@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Surprise!</title>
+  <style>
+    body{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      height:100vh;
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:#f6f6f6;
+    }
+    .card{
+      text-align:center;
+      padding:30px;
+      border-radius:12px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.08);
+      background:white;
+    }
+    button{
+      padding:12px 20px;
+      border-radius:8px;
+      border:none;
+      cursor:pointer;
+      font-size:16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Scan w ready 😏</h1>
+    <p>Click the button for a surprise</p>
+    <button id="go">Click Me!!!!!</button>
+  </div>
+
+  <script>
+    document.getElementById('go').addEventListener('click', function(){
+      // Open in new tab
+      window.open('https://theuselessweb.com', '_blank', 'noopener');
+    });
+  </script>
+</body>
+</html>
